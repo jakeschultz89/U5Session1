@@ -2,7 +2,7 @@
 class User {
     constructor(email,password,first,last,age,address,phone,payment,color){
         this.email=email;
-        this.password=pass;
+        this.password=password;
         this.firstName=first;
         this.lastName=last;
         this.age=age;
@@ -16,7 +16,7 @@ class User {
 // create the register function
 function registerUser(){
     let email=$('#txtEmail').val();
-    let pass=$('#txtPassword').val();
+    let password=$('#txtPassword').val();
     let first=$('#txtFirst').val();
     let last=$('#txtLast').val();
     let age=$('#txtAge').val();
@@ -24,7 +24,7 @@ function registerUser(){
     let phone=$('#txtPhone').val();
     let payment=$('#txtPayment').val();
     let color=$('#txtColor').val();
-    let user= new User(email,pass,first,last,age,address,phone,payment,color);
+    let user= new User(email,password,first,last,age,address,phone,payment,color);
     console.log(user);
 }
 //console log the user
