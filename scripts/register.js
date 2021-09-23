@@ -22,12 +22,27 @@ function registerUser(){
     let age=$('#txtAge').val();
     let address=$('#txtAddress').val();
     let phone=$('#txtPhone').val();
-    let payment=$('#txtPayment').val();
+    let payment=$('#selPayment').val();
     let color=$('#txtColor').val();
     let user= new User(email,password,first,last,age,address,phone,payment,color);
     console.log(user);
+    saveUser(user); //this function is on the storeManager.js
+    clearInputs();
 }
 //console log the user
+
+//function to clear
+function clearInputs(){
+    $('#txtEmail').val('');
+    $('#txtPassword').val('');
+    $('#txtFirst').val('');
+    $('#txtLast').val('');
+    $('#txtAge').val('');
+    $('#txtAddress').val('');
+    $('#txtPhone').val('');
+    $('#txtPayment').val('');
+    $('#txtColor').val('');
+}
 
 function init(){
     console.log("init function");
