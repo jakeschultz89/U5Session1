@@ -41,11 +41,17 @@ function clearInputs(){
     $('#txtAddress').val('');
     $('#txtPhone').val('');
     $('#txtPayment').val('');
-    $('#txtColor').val('');
+    $('#txtColor').val('rgb(0,0,0)');
+}
+function setNavInfo(){
+    let list=readUsers();
+    let count=list.length;
+    $(".menu-info label").text(count+" users");
 }
 
 function init(){
     console.log("init function");
     $('#btn-save').click(registerUser);
+    setNavInfo();
 }
 window.onload=init;

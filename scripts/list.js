@@ -23,6 +23,10 @@ function displayUsers(users){
 function init(){
     console.log("Listing users");
     var users=readUsers();//this function is on the storeManager
-   displayUsers(users);
+    displayUsers(users);
+    $('#btnClear').click(function(){
+        clearUsers();
+        location.reload();
+    });
 }
 window.onload = init;

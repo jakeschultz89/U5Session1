@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/6da635e2db.js" crossorigin="anonymous"></script>
+    <title>User Registration</title>
 </head>
 <body>
-    
+    <nav>
+        <a href="index.html">Home <i class="fas fa-home"></i></a>
+        <a href="register.html">Register <i class="fas fa-user-plus"></i></a>
+        <a href="users.html">Users <i class="fas fa-users"></i></a>
+    </nav>
+    <h1>Log in to our system</h1>
+    <div class="login-container">
+        <h3>Member Login</h3>
+        <div id="alertError" class="alert-error hide">
+            <p>Invalid credentials. Please try again.</p>
+        </div>
+        <input class="control" type="text" id="txtEmail" placeholder="Username">
+        <input class="control" type="password" id="txtPassword" placeholder="Password">
+        <button id="btnLogin" class="btn-login">Log in</button> <a href="register.html">Sign Up</a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/storeManager.js"></script>
+    <script src="scripts/login.js"></script>
 </body>
 </html>

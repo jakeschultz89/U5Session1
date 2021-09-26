@@ -17,4 +17,6 @@ function readUsers() {
         return list; //this is an object
     }
 }
-
+function clearUsers(){
+    localStorage.removeItem(KEY_USERS);
+}
